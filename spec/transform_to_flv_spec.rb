@@ -17,7 +17,7 @@ describe TransformToFlv do
     
     it "when i pass the movie to convert then i should see the file in the output dir" do
       @process = TransformToFlv.new({:file => @file_not_converted, :output_dir => File.expand_path(File.join('spec','video_converted'))})
-      @process.has_output?
+      @process.has_output?.should be_true
     end
   end
 end
