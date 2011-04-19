@@ -2,7 +2,7 @@
 source :gemcutter
 
 # gem "rails"
-group :test
+group :test do
   gem "infinity_test"
   gem "rspec"
 end
